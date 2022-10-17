@@ -17,10 +17,11 @@ body{
 .cartao{
     background-color: #070d12;
     width: 370px;
-    border: 2px solid #e126d9;
+    border: 2px solid #02d08f;
     border-radius: 10px;
     overflow: hidden;
-
+    padding-top: 5px;
+/* cor da borda do cartão #e126d9*/
 }
 
 .cartao .minhas-informacoes{
@@ -29,11 +30,18 @@ body{
     flex-direction: column;
     align-items: center; /*alinha horizontalmente por causa do flex direction column*/
     gap: 10px;
+    background-image: url(../imagens/giphy1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
 
 .cartao .minhas-informacoes img{
     border-radius: 50px;
     border: 4px solid #02d08f;
+    width: 96px;
+    height: 96px;
 }
 
 .cartao .minhas-informacoes .nome{
@@ -45,7 +53,7 @@ body{
 }
 
 .cartao .conteudo{
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .cartao .abas{
@@ -62,7 +70,7 @@ body{
 }
 
 .cartao .abas img{
-    width: 30px;
+    width: 50px;
 }
 
 .cartao .abas .aba.selecionado{
@@ -98,6 +106,7 @@ body{
     max-height: 180px;
     overflow-y: auto;
     padding-right: 15px;
+    text-align: center;
 }
 
 .informacoes-abas .descricao span{
@@ -121,6 +130,7 @@ body{
     padding: 10px;
     font-size: 20px;
     transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
 }
 
 .redes-sociais li a:hover{
